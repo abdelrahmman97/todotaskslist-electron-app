@@ -1,0 +1,28 @@
+{
+	"name": "todolist",
+	"version": "1.0.0",
+	"description": "Simple ToDo List App",
+	"main": "index.js",
+	"icon": "./assests/images/icon.ico",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"electron": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron .",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder"
+	},
+	"author": "Abdelrahman Mahmoud",
+	"license": "ISC",
+	"dependencies": {
+		"@electron/remote": "^1.2.0"
+	},
+	"build": {
+		"appId": "com.todolistapp-abdo.app",
+		"mac": {
+			"category": "productivity"
+		}
+	},
+	"devDependencies": {
+		"electron": "13.1.5"
+	}
+	
+}
